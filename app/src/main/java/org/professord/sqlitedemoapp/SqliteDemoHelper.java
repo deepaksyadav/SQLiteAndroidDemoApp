@@ -13,14 +13,15 @@ public class SqliteDemoHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db){
+
         db.execSQL("CREATE TABLE DRINK (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + "NAME TEXT, "
                 + "DESCRIPTION TEXT);");
 
 
-        insertDrink(db, "Coffee", "Steamed milk coffee");
-        insertDrink(db, "Tea", "Fresh tea leaves, steamed in milk.");
-        insertDrink(db, "Lassi", "Our best cold drink.");
+        insertDrink(db, "Coffee1", "Steamed milk coffee");
+        insertDrink(db, "Tea1", "Fresh tea leaves, steamed in milk.");
+        insertDrink(db, "Lassi1", "Our best cold drink.");
     }
 
     @Override
